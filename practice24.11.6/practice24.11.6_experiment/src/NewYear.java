@@ -83,6 +83,13 @@ class School{
         }
     }
 }
+public class NewYear{
+    public static void main(String[] args){
+        School school = new School();
+        school.student1.totalScore();
+        school.student2.totalScore();
+    }
+}
 
 输出:
 学生1的总分是100
