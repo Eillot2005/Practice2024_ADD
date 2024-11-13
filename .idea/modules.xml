@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Homework/Homework.iml" filepath="$PROJECT_DIR$/Homework/Homework.iml" />
       <module fileurl="file://$PROJECT_DIR$/Practice2024_ADD.iml" filepath="$PROJECT_DIR$/Practice2024_ADD.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practice24.11.12/practice24.11.12.iml" filepath="$PROJECT_DIR$/practice24.11.12/practice24.11.12.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practice24.11.13/practice24.11.13.iml" filepath="$PROJECT_DIR$/practice24.11.13/practice24.11.13.iml" />
       <module fileurl="file://$PROJECT_DIR$/practice24.11.6/practice24.11.6.iml" filepath="$PROJECT_DIR$/practice24.11.6/practice24.11.6.iml" />
       <module fileurl="file://$PROJECT_DIR$/practice24.11.6/practice24.11.6_experiment/practice24.11.6_experiment.iml" filepath="$PROJECT_DIR$/practice24.11.6/practice24.11.6_experiment/practice24.11.6_experiment.iml" />
     </modules>
