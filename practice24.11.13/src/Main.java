@@ -135,8 +135,51 @@ public class Main {
         4. 关闭数据库连接
             pstmt.close();
             conn.close();
+         */
 
+        //通用查询
+        /*
+        1. 创建Statement对象
+          Statement stmt = conn.createStatement();
+        2. 执行SQL语句
+            ResultSet rs = stmt.executeQuery("select * from student");
+        3. 处理查询结果
+            ResultSetMetaData rsmd = rs.getMetaData(); //获取ResultSet的元数据（列名、数据类型等）
+            int columnCount = rsmd.getColumnCount(); //获取列数
+            while (rs.next()) {
+                for (int i = 1; i <= columnCount; i++) {
+                    System.out.print(rs.getString(i) + "\t"); //输出每一列的值
+                }
+                System.out.println();
+            }
+        4. 关闭数据库连接
+            rs.close();
+            stmt.close();
+            conn.close();
+         */
 
+        //事务处理
+        /*
+        1.事物及处理
+          事务是一组操作单元,要么全部成功,要么全部失败。
+        2.事务处理的方法
+            1. setAutoCommit(boolean autoCommit):设置是否自动提交事务。
+            2. commit():提交事务。
+            3. rollback():回滚事务。
+        3.事务处理的步骤
+            1. 设置是否自动提交事务
+                conn.setAutoCommit(false);
+            2. 执行SQL语句
+                stmt.executeUpdate("insert into student(name,age) values('张三',20)");
+                stmt.executeUpdate("insert into student(name,age) values('李四',21)");
+            3. 提交事务
+                conn.commit();
+            4. 回滚事务
+                conn.rollback();//实现事务的回滚,回滚到事务开始之前的状态,即取消之前的操作
+            5. 关闭数据库连接
+                stmt.close();
+                conn.close();
+                最后实现的效果是:要么同时插入两条数据,要么都不插入。
          */
     }
 }
