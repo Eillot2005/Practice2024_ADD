@@ -1,0 +1,5 @@
+InputStream inputStream = AnalysisResult.class.getClassLoader().getResourceAsStream("score.txt");
+if (inputStream == null) {
+    throw new FileNotFoundException("score.txt not found in resources.");
+}
+Scanner scanner = new Scanner(inputStream);

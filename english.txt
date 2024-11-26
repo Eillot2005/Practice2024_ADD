@@ -1,0 +1,1 @@
+File file = new File("C:\\Users\\lyx\\path\\to\\your\\project\\src\\score.txt");
