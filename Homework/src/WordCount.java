@@ -6,7 +6,9 @@ public class WordCount {
         JFrame frame = new JFrame();
         frame.setLayout(new FlowLayout());
         JLabel label = new JLabel("请输入文本:");//标签
-        TextField textField = new TextField(20);
+        //创建一个大的输入框
+        JTextArea textField = new JTextArea(10, 30);
+        textField.setLineWrap(true);
         JButton button = new JButton("统计");
         JLabel label1 = new JLabel("单词数:");
         TextField textField1 = new TextField(20);
