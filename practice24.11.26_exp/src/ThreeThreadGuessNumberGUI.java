@@ -133,6 +133,6 @@ public class ThreeThreadGuessNumberGUI {
 
     // 主方法
     public static void main(String[] args) {
-        new Number2();
+        new ThreeThreadGuessNumberGUI();
     }
 }
